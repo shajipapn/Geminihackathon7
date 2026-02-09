@@ -1,0 +1,17 @@
+{
+  "name": "gemini-2026-test",
+  "version": "1.0.0",
+  "description": "Gemini 3 Flash API test for 2026",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "node-fetch": "^3.3.2"
+  }
+}

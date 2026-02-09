@@ -1,0 +1,205 @@
+@keyframes live-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.headline-gradient {
+    background: linear-gradient(270deg, #4b90ff, #00e6ff, #a259ff, #ff5546, #4b90ff);
+    background-size: 400% 400%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    filter: drop-shadow(0 2px 12px #00e6ff44);
+    animation: live-gradient 1.2s linear infinite;
+}
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background: radial-gradient(ellipse at 60% 0%, #23243a 60%, #0a0c1b 100%);
+    box-shadow: 0 0 0 100vmax #0a0c1b;
+    overflow-x: hidden;
+}
+.main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+.main .nav img{
+    width: 40px;
+    border-radius: 50px;
+}
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+.main-container .greet{
+        margin: 50px 0px 24px 0px;
+        font-size: 54px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #fff;
+        text-shadow:
+            0 0 18px #a259ffcc,   /* violet */
+            0 0 24px #ff4fa3bb,   /* pink */
+            0 0 32px #00e6ff99,   /* cyan/blue */
+            0 2px 24px #1a237e44,
+            0 1px 0 #0008;
+        filter: drop-shadow(0 0 18px #a259ff88) drop-shadow(0 0 12px #ff4fa388) drop-shadow(0 0 8px #00e6ff88);
+}
+.main .greet span{
+    background: linear-gradient(90deg, #4b90ff 10%, #00e6ff 50%, #a259ff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    filter: drop-shadow(0 2px 12px #00e6ff44);
+}
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+}
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background: linear-gradient(120deg, #23243a 60%, #1a1b2b 100%);
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 24px #1a237e22, 0 1.5px 0 #0004;
+    border: 1.5px solid #23243a;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+}
+.main .card p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 8px #00e6ff22;
+}
+.main .card:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 32px #00e6ff33, 0 2px 0 #0006;
+    border: 1.5px solid #00e6ff;
+}
+    background-color: #dfe4ea;
+}
+.main-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    font-size: 18px;
+}
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.result img{
+    width: 40px;
+    border-radius: 50px;
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+border-radius: 4px;
+border: none;
+background-color: #f6f7f8;
+background: linear-gradient(to right,#b1d5ee,#c953e98a,#9ed7ff);
+background-size: 800px 50px;
+height: 20px;
+animation: loader 4s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300px;
+    line-height: 1.8;
+}

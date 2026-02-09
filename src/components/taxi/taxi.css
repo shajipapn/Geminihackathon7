@@ -1,0 +1,84 @@
+.taxi-driver-clickable {
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.taxi-driver-clickable:hover {
+  background: #eaf2ff;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.10);
+}
+.taxi-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taxi-modal {
+  background: linear-gradient(135deg, #7f7fff 0%, #a259f7 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(79,140,255,0.18);
+  padding: 2rem 2.5rem;
+  min-width: 340px;
+  max-width: 95vw;
+  position: relative;
+  border: 1.5px solid #fff;
+}
+.taxi-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.taxi-modal-close {
+  color: #ff2d2d;
+}
+.taxi-modal-close:hover {
+  color: #b80000;
+}
+.taxi-assistant {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  backdrop-filter: blur(2px);
+}
+.taxi-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.taxi-form input, .taxi-form select {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.taxi-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.taxi-fare, .taxi-driver, .taxi-result {
+  margin-top: 1.2rem;
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.taxi-driver p {
+  margin: 0.2rem 0;
+}

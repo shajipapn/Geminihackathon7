@@ -1,0 +1,17 @@
+<svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dollar -->
+  <g>
+    <text x="10" y="30" font-size="28" font-family="Arial" fill="#43a047" font-weight="bold">$</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" keyTimes="0;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </g>
+  <!-- Euro -->
+  <g>
+    <text x="40" y="30" font-size="28" font-family="Arial" fill="#1976d2" font-weight="bold">€</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" keyTimes="0;0.5;1" dur="1.4s" repeatCount="indefinite"/>
+  </g>
+  <!-- INR -->
+  <g>
+    <text x="70" y="30" font-size="28" font-family="Arial" fill="#ffb300" font-weight="bold">₹</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" keyTimes="0;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </g>
+</svg>
