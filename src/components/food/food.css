@@ -1,0 +1,61 @@
+.food-assistant {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  backdrop-filter: blur(2px);
+}
+.food-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.food-form input {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.food-form button {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #ffb347 0%, #ffcc80 100%);
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,179,71,0.10);
+  transition: background 0.2s;
+}
+.food-form button:hover {
+  background: linear-gradient(135deg, #ff9800 0%, #ffd54f 100%);
+}
+.food-confirm {
+  text-align: center;
+  background: #fffbe7;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(255,179,71,0.10);
+  padding: 2rem;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+.food-confirm button {
+  margin-top: 1rem;
+  background: #ffb347;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,179,71,0.10);
+  transition: background 0.2s;
+}
+.food-confirm button:hover {
+  background: #ff9800;
+}
